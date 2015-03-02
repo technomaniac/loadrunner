@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+files/
+*.zip
+*.pyc
+sample_output*
+test.py
+*.txt*
