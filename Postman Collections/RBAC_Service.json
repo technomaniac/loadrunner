@@ -723,7 +723,8 @@
     "Retries": 0,
     "RetryInterval": 1.0,
     "GenerateAdvancedDocs": true,
-    "StoreTimezoneInformation": false
+    "StoreTimezoneInformation": false,
+    "UnderscoreNumbers": true
   },
   "TestGenSettings": {
     "Configuration": {},
