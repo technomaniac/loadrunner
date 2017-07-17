@@ -50,13 +50,13 @@
       "RequiredScopes": [],
       "Parameters": [
         {
-          "Example": "application/json",
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "application/json",
           "IsArray": false,
           "IsMap": false,
           "Name": "Content-Type",
@@ -112,13 +112,13 @@
       "RequiredScopes": [],
       "Parameters": [
         {
-          "Example": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\n \"subscriptions\": {\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\n  }\n}",
           "ParamFormat": "Body",
           "Optional": false,
           "Type": "Create UserRequest",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\n \"subscriptions\": {\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\n  }\n}",
           "IsArray": false,
           "IsMap": false,
           "Name": "Body",
@@ -126,13 +126,13 @@
           "DefaultValue": ""
         },
         {
-          "Example": "application/json",
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "application/json",
           "IsArray": false,
           "IsMap": false,
           "Name": "Content-Type",
@@ -193,13 +193,13 @@
       "RequiredScopes": [],
       "Parameters": [
         {
-          "Example": "{\"name\":\"Test Tenant 1\", \"subscriptions\": {\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\n  }\n}",
           "ParamFormat": "Body",
           "Optional": false,
           "Type": "Update UserRequest",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "{\"name\":\"Test Tenant 1\", \"subscriptions\": {\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\n  }\n}",
           "IsArray": false,
           "IsMap": false,
           "Name": "Body",
@@ -207,13 +207,13 @@
           "DefaultValue": ""
         },
         {
-          "Example": "application/json",
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "application/json",
           "IsArray": false,
           "IsMap": false,
           "Name": "Content-Type",
@@ -274,13 +274,13 @@
       "RequiredScopes": [],
       "Parameters": [
         {
-          "Example": "application/json",
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "application/json",
           "IsArray": false,
           "IsMap": false,
           "Name": "Content-Type",
@@ -336,13 +336,13 @@
       "RequiredScopes": [],
       "Parameters": [
         {
-          "Example": "application/json",
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "application/json",
           "IsArray": false,
           "IsMap": false,
           "Name": "Content-Type",
@@ -350,13 +350,13 @@
           "DefaultValue": ""
         },
         {
-          "Example": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTM3YjM5YTMtZTUzYy00ZmI2LWJjYmYtYjgwZmMxMWQ3MTQ4IiwiZXhwIjoxNDkwMzgzMzI1fQ.TceRZeG23XpKlSZ1ltpwenxFCnafSwNHHgVo-iuclbI",
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTM3YjM5YTMtZTUzYy00ZmI2LWJjYmYtYjgwZmMxMWQ3MTQ4IiwiZXhwIjoxNDkwMzgzMzI1fQ.TceRZeG23XpKlSZ1ltpwenxFCnafSwNHHgVo-iuclbI",
           "IsArray": false,
           "IsMap": false,
           "Name": "Authorization",
@@ -364,13 +364,13 @@
           "DefaultValue": ""
         },
         {
-          "Example": "g#;tt&v)RjUMH3LV~Vr0XVfdW6wx43",
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "g#;tt&v)RjUMH3LV~Vr0XVfdW6wx43",
           "IsArray": false,
           "IsMap": false,
           "Name": "X-Refresh-Token",
@@ -436,13 +436,13 @@
       "RequiredScopes": [],
       "Parameters": [
         {
-          "Example": "{\"username\":\"admin\",\"password\":\"admin\"}",
           "ParamFormat": "Body",
           "Optional": false,
           "Type": "Login UserRequest",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "{\"username\":\"admin\",\"password\":\"admin\"}",
           "IsArray": false,
           "IsMap": false,
           "Name": "Body",
@@ -450,13 +450,13 @@
           "DefaultValue": ""
         },
         {
-          "Example": "application/json",
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "application/json",
           "IsArray": false,
           "IsMap": false,
           "Name": "Content-Type",
@@ -517,13 +517,13 @@
       "RequiredScopes": [],
       "Parameters": [
         {
-          "Example": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTk0MmFlYTEtMGNkMS00YjFiLWIzNDctY2VmMDE1NDA3MDI2IiwiZXhwIjoxNDkyMDg2MjM1LCJzdWJzY3JpcHRpb25zIjp7InRlbmFudF9pZCI6IjE0NmNjNjVmLTk0OTItNDU3OC1hNjI2LWNkMWExMTVjNjlkMSJ9fQ.EmSSQCmjVHHMjz2qTOilGxvvgBw0a3CMsbdq1_Btktc",
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
+          "Example": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTk0MmFlYTEtMGNkMS00YjFiLWIzNDctY2VmMDE1NDA3MDI2IiwiZXhwIjoxNDkyMDg2MjM1LCJzdWJzY3JpcHRpb25zIjp7InRlbmFudF9pZCI6IjE0NmNjNjVmLTk0OTItNDU3OC1hNjI2LWNkMWExMTVjNjlkMSJ9fQ.EmSSQCmjVHHMjz2qTOilGxvvgBw0a3CMsbdq1_Btktc",
           "IsArray": false,
           "IsMap": false,
           "Name": "Authorization",
