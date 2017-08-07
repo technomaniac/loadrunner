@@ -1,16 +1,20 @@
 {
   "Name": "RBAC Service",
-  "BaseUri": "http://example.com",
+  "BaseUri": "https://stag.api.artificilabs.com/v1/rbac",
   "ServerConfiguration": {
     "DefaultEnvironment": "production",
-    "DefaultServer": "default",
+    "DefaultServer": "Server 1",
     "Environments": [
       {
         "Name": "production",
         "Servers": [
           {
-            "Name": "default",
-            "Url": "http://example.com"
+            "Name": "Server 1",
+            "Url": "https://stag.api.artificilabs.com/v1/rbac"
+          },
+          {
+            "Name": "Server 2",
+            "Url": "http://stag.api.artificilabs.com/v1/rbac"
           }
         ]
       }
@@ -33,7 +37,8 @@
       "HTTPMethod": "GET",
       "Group": "Misc",
       "RequiresAuthentication": false,
-      "Route": "/v1/rbac/users/",
+      "Server": "Server 1",
+      "Route": "/users/",
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -95,7 +100,8 @@
       "HTTPMethod": "POST",
       "Group": "Misc",
       "RequiresAuthentication": false,
-      "Route": "/v1/rbac/user/",
+      "Server": "Server 1",
+      "Route": "/user/",
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -176,7 +182,8 @@
       "HTTPMethod": "PUT",
       "Group": "Misc",
       "RequiresAuthentication": false,
-      "Route": "/v1/rbac/user/178c844a-541f-49cb-a408-2619a8ff74a2/",
+      "Server": "Server 1",
+      "Route": "/user/178c844a-541f-49cb-a408-2619a8ff74a2/",
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -257,7 +264,8 @@
       "HTTPMethod": "DELETE",
       "Group": "Misc",
       "RequiresAuthentication": false,
-      "Route": "/v1/rbac/user/ca5a3051-8cbf-416c-8ec5-fa0a3325583a/",
+      "Server": "Server 2",
+      "Route": "/user/ca5a3051-8cbf-416c-8ec5-fa0a3325583a/",
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -319,7 +327,8 @@
       "HTTPMethod": "GET",
       "Group": "Misc",
       "RequiresAuthentication": false,
-      "Route": "/v1/rbac/refresh-token/",
+      "Server": "Server 2",
+      "Route": "/refresh-token/",
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -419,7 +428,8 @@
       "HTTPMethod": "POST",
       "Group": "Misc",
       "RequiresAuthentication": false,
-      "Route": "/v1/rbac/login/",
+      "Server": "Server 1",
+      "Route": "/login/",
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -500,7 +510,8 @@
       "HTTPMethod": "GET",
       "Group": "Misc",
       "RequiresAuthentication": false,
-      "Route": "/v1/rbac/auth/",
+      "Server": "Server 1",
+      "Route": "/auth/",
       "Response": {
         "Optional": false,
         "Type": "Void",
