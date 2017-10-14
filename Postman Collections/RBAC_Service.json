@@ -52,7 +52,6 @@
       "HasOptionalQueryParams": false,
       "HasOptionalFieldParams": false,
       "CollectParameters": false,
-      "RequiredScopes": [],
       "Parameters": [
         {
           "ParamFormat": "Header",
@@ -115,7 +114,6 @@
       "HasOptionalQueryParams": false,
       "HasOptionalFieldParams": false,
       "CollectParameters": false,
-      "RequiredScopes": [],
       "Parameters": [
         {
           "ParamFormat": "Body",
@@ -197,7 +195,6 @@
       "HasOptionalQueryParams": false,
       "HasOptionalFieldParams": false,
       "CollectParameters": false,
-      "RequiredScopes": [],
       "Parameters": [
         {
           "ParamFormat": "Body",
@@ -279,7 +276,6 @@
       "HasOptionalQueryParams": false,
       "HasOptionalFieldParams": false,
       "CollectParameters": false,
-      "RequiredScopes": [],
       "Parameters": [
         {
           "ParamFormat": "Header",
@@ -342,7 +338,6 @@
       "HasOptionalQueryParams": false,
       "HasOptionalFieldParams": false,
       "CollectParameters": false,
-      "RequiredScopes": [],
       "Parameters": [
         {
           "ParamFormat": "Header",
@@ -443,7 +438,6 @@
       "HasOptionalQueryParams": false,
       "HasOptionalFieldParams": false,
       "CollectParameters": false,
-      "RequiredScopes": [],
       "Parameters": [
         {
           "ParamFormat": "Body",
@@ -525,7 +519,6 @@
       "HasOptionalQueryParams": false,
       "HasOptionalFieldParams": false,
       "CollectParameters": false,
-      "RequiredScopes": [],
       "Parameters": [
         {
           "ParamFormat": "Header",
