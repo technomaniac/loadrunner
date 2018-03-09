@@ -33,7 +33,7 @@
   "Endpoints": [
     {
       "Name": "Get All users",
-      "Description": "",
+      "Description": "TODO: Add Description",
       "HTTPMethod": "GET",
       "Group": "Misc",
       "RequiresAuthentication": false,
@@ -74,7 +74,7 @@
       "TestCases": [
         {
           "Name": "Get All users",
-          "Description": "",
+          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -97,7 +97,7 @@
     },
     {
       "Name": "Create User",
-      "Description": "",
+      "Description": "TODO: Add Description",
       "HTTPMethod": "POST",
       "Group": "Misc",
       "RequiresAuthentication": false,
@@ -153,7 +153,7 @@
       "TestCases": [
         {
           "Name": "Create User",
-          "Description": "",
+          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -181,7 +181,7 @@
     },
     {
       "Name": "Update User",
-      "Description": "",
+      "Description": "TODO: Add Description",
       "HTTPMethod": "PUT",
       "Group": "Misc",
       "RequiresAuthentication": false,
@@ -237,7 +237,7 @@
       "TestCases": [
         {
           "Name": "Update User",
-          "Description": "",
+          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -265,7 +265,7 @@
     },
     {
       "Name": "Delete User",
-      "Description": "",
+      "Description": "TODO: Add Description",
       "HTTPMethod": "DELETE",
       "Group": "Misc",
       "RequiresAuthentication": false,
@@ -306,7 +306,7 @@
       "TestCases": [
         {
           "Name": "Delete User",
-          "Description": "",
+          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -329,7 +329,7 @@
     },
     {
       "Name": "Refresh Token",
-      "Description": "",
+      "Description": "TODO: Add Description",
       "HTTPMethod": "GET",
       "Group": "Misc",
       "RequiresAuthentication": false,
@@ -400,7 +400,7 @@
       "TestCases": [
         {
           "Name": "Refresh Token",
-          "Description": "",
+          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -433,7 +433,7 @@
     },
     {
       "Name": "Login User",
-      "Description": "",
+      "Description": "TODO: Add Description",
       "HTTPMethod": "POST",
       "Group": "Misc",
       "RequiresAuthentication": false,
@@ -489,7 +489,7 @@
       "TestCases": [
         {
           "Name": "Login User",
-          "Description": "",
+          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -517,7 +517,7 @@
     },
     {
       "Name": "Auth Request",
-      "Description": "",
+      "Description": "TODO: Add Description",
       "HTTPMethod": "GET",
       "Group": "Misc",
       "RequiresAuthentication": false,
@@ -558,7 +558,7 @@
       "TestCases": [
         {
           "Name": "Auth Request",
-          "Description": "",
+          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
