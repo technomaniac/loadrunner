@@ -28,7 +28,8 @@
     "Type": "None",
     "AuthType": "None",
     "Parameters": [],
-    "Scopes": []
+    "Scopes": [],
+    "ParamFormats": {}
   },
   "Endpoints": [
     {
@@ -125,7 +126,7 @@
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
-          "Example": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\n \"subscriptions\": {\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\n  }\n}",
+          "Example": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
           "Nullable": false,
           "IsArray": false,
           "IsMap": false,
@@ -160,7 +161,7 @@
             {
               "IsNull": false,
               "Name": "Body",
-              "Value": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\n \"subscriptions\": {\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\n  }\n}"
+              "Value": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}"
             },
             {
               "IsNull": false,
@@ -209,7 +210,7 @@
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
-          "Example": "{\"name\":\"Test Tenant 1\", \"subscriptions\": {\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\n  }\n}",
+          "Example": "{\"name\":\"Test Tenant 1\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
           "Nullable": false,
           "IsArray": false,
           "IsMap": false,
@@ -244,7 +245,7 @@
             {
               "IsNull": false,
               "Name": "Body",
-              "Value": "{\"name\":\"Test Tenant 1\", \"subscriptions\": {\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\n  }\n}"
+              "Value": "{\"name\":\"Test Tenant 1\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}"
             },
             {
               "IsNull": false,
@@ -771,7 +772,8 @@
     "GenerateAdvancedDocs": true,
     "StoreTimezoneInformation": false,
     "UnderscoreNumbers": true,
-    "UseSingletonPattern": true
+    "UseSingletonPattern": true,
+    "IgnoreIfNullJson": false
   },
   "Errors": [],
   "TestGenSettings": {
