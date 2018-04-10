@@ -333,7 +333,7 @@
       "Description": "TODO: Add Description",
       "HTTPMethod": "GET",
       "Group": "Misc",
-      "RequiresAuthentication": false,
+      "RequiresAuthentication": true,
       "Server": "Server 2",
       "Route": "/refresh-token/",
       "Response": {
@@ -373,21 +373,6 @@
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
-          "Example": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTM3YjM5YTMtZTUzYy00ZmI2LWJjYmYtYjgwZmMxMWQ3MTQ4IiwiZXhwIjoxNDkwMzgzMzI1fQ.TceRZeG23XpKlSZ1ltpwenxFCnafSwNHHgVo-iuclbI",
-          "Nullable": false,
-          "IsArray": false,
-          "IsMap": false,
-          "Name": "Authorization",
-          "Description": "",
-          "DefaultValue": ""
-        },
-        {
-          "ParamFormat": "Header",
-          "Optional": false,
-          "Type": "String",
-          "Constant": false,
-          "IsStream": false,
-          "IsAttribute": false,
           "Example": "g#;tt&v)RjUMH3LV~Vr0XVfdW6wx43",
           "Nullable": false,
           "IsArray": false,
@@ -409,11 +394,6 @@
               "IsNull": false,
               "Name": "Content-Type",
               "Value": "application/json"
-            },
-            {
-              "IsNull": false,
-              "Name": "Authorization",
-              "Value": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTM3YjM5YTMtZTUzYy00ZmI2LWJjYmYtYjgwZmMxMWQ3MTQ4IiwiZXhwIjoxNDkwMzgzMzI1fQ.TceRZeG23XpKlSZ1ltpwenxFCnafSwNHHgVo-iuclbI"
             },
             {
               "IsNull": false,
@@ -521,7 +501,7 @@
       "Description": "TODO: Add Description",
       "HTTPMethod": "GET",
       "Group": "Misc",
-      "RequiresAuthentication": false,
+      "RequiresAuthentication": true,
       "Server": "Server 1",
       "Route": "/auth/",
       "Response": {
@@ -538,23 +518,7 @@
       "HasOptionalQueryParams": false,
       "HasOptionalFieldParams": false,
       "CollectParameters": false,
-      "Parameters": [
-        {
-          "ParamFormat": "Header",
-          "Optional": false,
-          "Type": "String",
-          "Constant": false,
-          "IsStream": false,
-          "IsAttribute": false,
-          "Example": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTk0MmFlYTEtMGNkMS00YjFiLWIzNDctY2VmMDE1NDA3MDI2IiwiZXhwIjoxNDkyMDg2MjM1LCJzdWJzY3JpcHRpb25zIjp7InRlbmFudF9pZCI6IjE0NmNjNjVmLTk0OTItNDU3OC1hNjI2LWNkMWExMTVjNjlkMSJ9fQ.EmSSQCmjVHHMjz2qTOilGxvvgBw0a3CMsbdq1_Btktc",
-          "Nullable": false,
-          "IsArray": false,
-          "IsMap": false,
-          "Name": "Authorization",
-          "Description": "",
-          "DefaultValue": ""
-        }
-      ],
+      "Parameters": [],
       "Errors": [],
       "TestCases": [
         {
@@ -562,13 +526,7 @@
           "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
-          "InputParameters": [
-            {
-              "IsNull": false,
-              "Name": "Authorization",
-              "Value": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTk0MmFlYTEtMGNkMS00YjFiLWIzNDctY2VmMDE1NDA3MDI2IiwiZXhwIjoxNDkyMDg2MjM1LCJzdWJzY3JpcHRpb25zIjp7InRlbmFudF9pZCI6IjE0NmNjNjVmLTk0OTItNDU3OC1hNjI2LWNkMWExMTVjNjlkMSJ9fQ.EmSSQCmjVHHMjz2qTOilGxvvgBw0a3CMsbdq1_Btktc"
-            }
-          ],
+          "InputParameters": [],
           "ExpectedStatus": "200",
           "ExpectedHeaders": [],
           "ExpectedHeadersAllowExtra": true,
