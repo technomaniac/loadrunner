@@ -120,21 +120,6 @@
       "CollectParameters": false,
       "Parameters": [
         {
-          "ParamFormat": "Body",
-          "Optional": false,
-          "Type": "Create UserRequest",
-          "Constant": false,
-          "IsStream": false,
-          "IsAttribute": false,
-          "Example": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
-          "Nullable": false,
-          "IsArray": false,
-          "IsMap": false,
-          "Name": "Body",
-          "Description": "",
-          "DefaultValue": ""
-        },
-        {
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
@@ -146,6 +131,21 @@
           "IsArray": false,
           "IsMap": false,
           "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "ParamFormat": "Body",
+          "Optional": false,
+          "Type": "Create UserRequest",
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Name": "Body",
           "Description": "",
           "DefaultValue": ""
         }
@@ -160,13 +160,13 @@
           "InputParameters": [
             {
               "IsNull": false,
-              "Name": "Body",
-              "Value": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}"
+              "Name": "Content-Type",
+              "Value": "application/json"
             },
             {
               "IsNull": false,
-              "Name": "Content-Type",
-              "Value": "application/json"
+              "Name": "Body",
+              "Value": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}"
             }
           ],
           "ExpectedStatus": "200",
@@ -204,21 +204,6 @@
       "CollectParameters": false,
       "Parameters": [
         {
-          "ParamFormat": "Body",
-          "Optional": false,
-          "Type": "Update UserRequest",
-          "Constant": false,
-          "IsStream": false,
-          "IsAttribute": false,
-          "Example": "{\"name\":\"Test Tenant 1\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
-          "Nullable": false,
-          "IsArray": false,
-          "IsMap": false,
-          "Name": "Body",
-          "Description": "",
-          "DefaultValue": ""
-        },
-        {
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
@@ -230,6 +215,21 @@
           "IsArray": false,
           "IsMap": false,
           "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "ParamFormat": "Body",
+          "Optional": false,
+          "Type": "Update UserRequest",
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "{\"name\":\"Test Tenant 1\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Name": "Body",
           "Description": "",
           "DefaultValue": ""
         }
@@ -244,13 +244,13 @@
           "InputParameters": [
             {
               "IsNull": false,
-              "Name": "Body",
-              "Value": "{\"name\":\"Test Tenant 1\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}"
+              "Name": "Content-Type",
+              "Value": "application/json"
             },
             {
               "IsNull": false,
-              "Name": "Content-Type",
-              "Value": "application/json"
+              "Name": "Body",
+              "Value": "{\"name\":\"Test Tenant 1\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}"
             }
           ],
           "ExpectedStatus": "200",
@@ -436,21 +436,6 @@
       "CollectParameters": false,
       "Parameters": [
         {
-          "ParamFormat": "Body",
-          "Optional": false,
-          "Type": "Login UserRequest",
-          "Constant": false,
-          "IsStream": false,
-          "IsAttribute": false,
-          "Example": "{\"username\":\"admin\",\"password\":\"admin\"}",
-          "Nullable": false,
-          "IsArray": false,
-          "IsMap": false,
-          "Name": "Body",
-          "Description": "",
-          "DefaultValue": ""
-        },
-        {
           "ParamFormat": "Header",
           "Optional": false,
           "Type": "String",
@@ -462,6 +447,21 @@
           "IsArray": false,
           "IsMap": false,
           "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "ParamFormat": "Body",
+          "Optional": false,
+          "Type": "Login UserRequest",
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "{\"username\":\"admin\",\"password\":\"admin\"}",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Name": "Body",
           "Description": "",
           "DefaultValue": ""
         }
@@ -476,13 +476,13 @@
           "InputParameters": [
             {
               "IsNull": false,
-              "Name": "Body",
-              "Value": "{\"username\":\"admin\",\"password\":\"admin\"}"
+              "Name": "Content-Type",
+              "Value": "application/json"
             },
             {
               "IsNull": false,
-              "Name": "Content-Type",
-              "Value": "application/json"
+              "Name": "Body",
+              "Value": "{\"username\":\"admin\",\"password\":\"admin\"}"
             }
           ],
           "ExpectedStatus": "200",
