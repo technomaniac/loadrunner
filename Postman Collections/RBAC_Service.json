@@ -733,7 +733,8 @@
     "UnderscoreNumbers": true,
     "UseSingletonPattern": true,
     "IgnoreIfNullJson": false,
-    "DisableLinting": false
+    "DisableLinting": false,
+    "ApplyCustomizations": []
   },
   "Errors": [],
   "TestGenSettings": {
