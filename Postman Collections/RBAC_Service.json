@@ -735,6 +735,7 @@
     "UseSingletonPattern": true,
     "IgnoreIfNullJson": false,
     "DisableLinting": false,
+    "SortResources": false,
     "ApplyCustomizations": []
   },
   "Errors": [],
