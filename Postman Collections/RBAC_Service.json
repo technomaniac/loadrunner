@@ -6,8 +6,8 @@
   },
   "item": [
     {
-      "_postman_id": "2257577-4c090431-f670-805e-04ed-e70c9a5a2919",
       "name": "Get All users",
+      "_postman_id": "2257577-4c090431-f670-805e-04ed-e70c9a5a2919",
       "request": {
         "method": "GET",
         "header": [
@@ -25,8 +25,8 @@
       "response": []
     },
     {
-      "_postman_id": "2257577-f54e0129-80ef-053e-a0ef-89bf186a58c2",
       "name": "Create User",
+      "_postman_id": "2257577-f54e0129-80ef-053e-a0ef-89bf186a58c2",
       "request": {
         "method": "POST",
         "header": [
@@ -44,8 +44,8 @@
       "response": []
     },
     {
-      "_postman_id": "2257577-962627af-53b3-636f-261c-26fc130ec252",
       "name": "Update User",
+      "_postman_id": "2257577-962627af-53b3-636f-261c-26fc130ec252",
       "request": {
         "method": "PUT",
         "header": [
@@ -63,8 +63,8 @@
       "response": []
     },
     {
-      "_postman_id": "2257577-77169ad3-3306-47ef-06f7-887347a73487",
       "name": "Delete User",
+      "_postman_id": "2257577-77169ad3-3306-47ef-06f7-887347a73487",
       "request": {
         "method": "DELETE",
         "header": [
@@ -82,8 +82,8 @@
       "response": []
     },
     {
-      "_postman_id": "2257577-aa373936-cb8d-026d-6e2a-f3201ee1cb94",
       "name": "Refresh Token",
+      "_postman_id": "2257577-aa373936-cb8d-026d-6e2a-f3201ee1cb94",
       "request": {
         "method": "GET",
         "header": [
@@ -109,8 +109,8 @@
       "response": []
     },
     {
-      "_postman_id": "2257577-8c2f76cb-a8c2-02e8-9d8d-18f39d13d9f0",
       "name": "Login User",
+      "_postman_id": "2257577-8c2f76cb-a8c2-02e8-9d8d-18f39d13d9f0",
       "request": {
         "method": "POST",
         "header": [
@@ -128,8 +128,8 @@
       "response": []
     },
     {
-      "_postman_id": "2257577-66f0e6e3-bf3e-4c1d-709b-176e3be0a0f4",
       "name": "Auth Request",
+      "_postman_id": "2257577-66f0e6e3-bf3e-4c1d-709b-176e3be0a0f4",
       "request": {
         "method": "GET",
         "header": [
