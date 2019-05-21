@@ -147,12 +147,12 @@
         {
           "ParamFormat": "Body",
           "Optional": false,
-          "Type": "Create UserRequest",
+          "Type": "Create User Request",
           "IsSdlNativeType": false,
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
-          "Example": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
+          "Example": "{\r\n  \"email\": \"testadmin2@quikmile.com\",\r\n  \"password\": \"admin\",\r\n  \"subscriptions\": {\r\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\r\n  }\r\n}",
           "Nullable": false,
           "IsArray": false,
           "IsMap": false,
@@ -178,7 +178,7 @@
             {
               "IsNull": false,
               "Name": "Body",
-              "Value": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}"
+              "Value": "{\r\n  \"email\": \"testadmin2@quikmile.com\",\r\n  \"password\": \"admin\",\r\n  \"subscriptions\": {\r\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\r\n  }\r\n}"
             }
           ],
           "ExpectedStatus": "200",
@@ -238,12 +238,12 @@
         {
           "ParamFormat": "Body",
           "Optional": false,
-          "Type": "Update UserRequest",
+          "Type": "Update User Request",
           "IsSdlNativeType": false,
           "Constant": false,
           "IsStream": false,
           "IsAttribute": false,
-          "Example": "{\"name\":\"Test Tenant 1\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
+          "Example": "{\r\n  \"name\": \"Test Tenant 1\",\r\n  \"subscriptions\": {\r\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\r\n  }\r\n}",
           "Nullable": false,
           "IsArray": false,
           "IsMap": false,
@@ -269,7 +269,7 @@
             {
               "IsNull": false,
               "Name": "Body",
-              "Value": "{\"name\":\"Test Tenant 1\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}"
+              "Value": "{\r\n  \"name\": \"Test Tenant 1\",\r\n  \"subscriptions\": {\r\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\r\n  }\r\n}"
             }
           ],
           "ExpectedStatus": "200",
@@ -511,7 +511,7 @@
         {
           "ParamFormat": "Body",
           "Optional": false,
-          "Type": "Login UserRequest",
+          "Type": "Login User Request",
           "IsSdlNativeType": false,
           "Constant": false,
           "IsStream": false,
@@ -635,7 +635,7 @@
   ],
   "CustomTypes": [
     {
-      "Name": "Create UserRequest",
+      "Name": "Create User Request",
       "ImplementationType": "Structure",
       "Fields": [
         {
@@ -710,10 +710,11 @@
           "DefaultValue": ""
         }
       ],
+      "ExampleValue": "{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}",
       "Deprecated": false
     },
     {
-      "Name": "Update UserRequest",
+      "Name": "Update User Request",
       "ImplementationType": "Structure",
       "Fields": [
         {
@@ -752,7 +753,7 @@
       "Deprecated": false
     },
     {
-      "Name": "Login UserRequest",
+      "Name": "Login User Request",
       "ImplementationType": "Structure",
       "Fields": [
         {
