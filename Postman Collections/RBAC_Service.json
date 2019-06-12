@@ -358,7 +358,7 @@
       "Description": "TODO: Add Description",
       "HTTPMethod": "GET",
       "Group": "Misc",
-      "RequiresAuthentication": true,
+      "RequiresAuthentication": false,
       "Server": "Server 2",
       "Route": "/refresh-token/",
       "Response": {
@@ -562,7 +562,7 @@
       "Description": "TODO: Add Description",
       "HTTPMethod": "GET",
       "Group": "Misc",
-      "RequiresAuthentication": true,
+      "RequiresAuthentication": false,
       "Server": "Server 1",
       "Route": "/auth/",
       "Response": {
