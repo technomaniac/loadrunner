@@ -21,7 +21,6 @@
     ],
     "Parameters": []
   },
-  "Description": "TODO: Add Description",
   "Version": "1.0",
   "Contact": {},
   "AdditionalHeaders": [],
@@ -35,7 +34,6 @@
   "Endpoints": [
     {
       "Name": "Get All users",
-      "Description": "TODO: Add Description",
       "HTTPMethod": "GET",
       "Group": "Misc",
       "RequiresAuthentication": true,
@@ -80,7 +78,6 @@
       "TestCases": [
         {
           "Name": "Get All users",
-          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -100,11 +97,12 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Create User",
-      "Description": "TODO: Add Description",
       "HTTPMethod": "POST",
       "Group": "Misc",
       "RequiresAuthentication": true,
@@ -166,7 +164,6 @@
       "TestCases": [
         {
           "Name": "Create User",
-          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -191,11 +188,12 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Update User",
-      "Description": "TODO: Add Description",
       "HTTPMethod": "PUT",
       "Group": "Misc",
       "RequiresAuthentication": true,
@@ -257,7 +255,6 @@
       "TestCases": [
         {
           "Name": "Update User",
-          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -282,11 +279,12 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Delete User",
-      "Description": "TODO: Add Description",
       "HTTPMethod": "DELETE",
       "Group": "Misc",
       "RequiresAuthentication": true,
@@ -331,7 +329,6 @@
       "TestCases": [
         {
           "Name": "Delete User",
-          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -351,11 +348,12 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Refresh Token",
-      "Description": "TODO: Add Description",
       "HTTPMethod": "GET",
       "Group": "Misc",
       "RequiresAuthentication": false,
@@ -434,7 +432,6 @@
       "TestCases": [
         {
           "Name": "Refresh Token",
-          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -464,11 +461,12 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Login User",
-      "Description": "TODO: Add Description",
       "HTTPMethod": "POST",
       "Group": "Misc",
       "RequiresAuthentication": true,
@@ -530,7 +528,6 @@
       "TestCases": [
         {
           "Name": "Login User",
-          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -555,11 +552,12 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
       "Name": "Auth Request",
-      "Description": "TODO: Add Description",
       "HTTPMethod": "GET",
       "Group": "Misc",
       "RequiresAuthentication": false,
@@ -604,7 +602,6 @@
       "TestCases": [
         {
           "Name": "Auth Request",
-          "Description": "TODO: Add Description",
           "Enabled": true,
           "ShouldPass": true,
           "InputParameters": [
@@ -624,7 +621,9 @@
         }
       ],
       "WrapBodyInObject": false,
-      "Deprecated": false
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     }
   ],
   "EndpointGroups": [
