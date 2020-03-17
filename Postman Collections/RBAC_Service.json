@@ -40,6 +40,7 @@
       "RequiresAuthentication": true,
       "Server": "Server 1",
       "Route": "/users/",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -110,6 +111,7 @@
       "RequiresAuthentication": true,
       "Server": "Server 1",
       "Route": "/user/",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -202,6 +204,7 @@
       "RequiresAuthentication": true,
       "Server": "Server 1",
       "Route": "/user/178c844a-541f-49cb-a408-2619a8ff74a2/",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -294,6 +297,7 @@
       "RequiresAuthentication": true,
       "Server": "Server 2",
       "Route": "/user/ca5a3051-8cbf-416c-8ec5-fa0a3325583a/",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -364,6 +368,7 @@
       "RequiresAuthentication": false,
       "Server": "Server 2",
       "Route": "/refresh-token/",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -478,6 +483,7 @@
       "RequiresAuthentication": true,
       "Server": "Server 1",
       "Route": "/login/",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -569,6 +575,7 @@
       "RequiresAuthentication": false,
       "Server": "Server 1",
       "Route": "/auth/",
+      "Responses": {},
       "Response": {
         "Optional": false,
         "Type": "Void",
@@ -798,6 +805,7 @@
       "Deprecated": false
     }
   ],
+  "UserDefinedImportedTypes": [],
   "CodeGenSettings": {
     "SynchronyMode": "Asynchronous",
     "ModelSerializationScheme": "Json",
