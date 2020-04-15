@@ -896,6 +896,7 @@
     "SetPostmanParamValuesAsVariables": false,
     "WrapResponseFieldInWsdl": true,
     "AllowEmptyTypeAttributesInXsd": false,
-    "WrapInputOutputTypesInElementInXsd": false
+    "WrapInputOutputTypesInElementInXsd": false,
+    "AddRefSiblingDataInAllOfSchema": false
   }
 }
