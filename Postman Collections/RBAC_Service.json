@@ -1,150 +1,909 @@
 {
-  "info": {
-    "_postman_id": "2257577-cfc31b38-56e5-8c5d-9e8a-11460ef43ef0",
-    "name": "RBAC Service",
-    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  "Name": "RBAC Service",
+  "BaseUri": "https://stag.api.artificilabs.com/v1/rbac",
+  "ServerConfiguration": {
+    "UseParent": false,
+    "DefaultEnvironment": "production",
+    "DefaultServer": "Server 1",
+    "Environments": [
+      {
+        "Name": "production",
+        "Servers": [
+          {
+            "Name": "Server 1",
+            "Url": "https://stag.api.artificilabs.com/v1/rbac"
+          },
+          {
+            "Name": "Server 2",
+            "Url": "http://stag.api.artificilabs.com/v1/rbac"
+          }
+        ]
+      }
+    ],
+    "Parameters": []
   },
-  "item": [
+  "Version": "1.0",
+  "Contact": {},
+  "AdditionalHeaders": [],
+  "Authentication": {
+    "Type": "None",
+    "AuthType": "None",
+    "Parameters": [],
+    "Scopes": [],
+    "ParamFormats": {}
+  },
+  "Endpoints": [
     {
-      "name": "Get All users",
-      "_postman_id": "2257577-4c090431-f670-805e-04ed-e70c9a5a2919",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"truck_id\":\"0e378d0f-e3aa-422c-89ef-609e9117e0e6\",\n  \"driver_id\":\"9e14c544-7f8f-4d70-81e9-637721641da6\"\n}"
-        },
-        "url": "https://stag.api.artificilabs.com/v1/rbac/users/"
+      "Name": "Get All users",
+      "HTTPMethod": "GET",
+      "Group": "Misc",
+      "RequestContentType": "application/json",
+      "RequiresAuthentication": true,
+      "Server": "Server 1",
+      "Route": "/users/",
+      "Responses": {},
+      "Response": {
+        "Optional": false,
+        "Type": "Void",
+        "IsSdlNativeType": true,
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Nullable": false,
+        "IsArray": false,
+        "IsMap": false,
+        "Deprecated": false,
+        "Name": "Response"
       },
-      "response": []
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "Parameters": [
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "application/json",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "Errors": [],
+      "TestCases": [
+        {
+          "Name": "Get All users",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [
+            {
+              "IsNull": false,
+              "Name": "Content-Type",
+              "Value": "application/json"
+            }
+          ],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [],
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBodyMatchMode": "NONE",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
+        }
+      ],
+      "WrapBodyInObject": false,
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
-      "name": "Create User",
-      "_postman_id": "2257577-f54e0129-80ef-053e-a0ef-89bf186a58c2",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\n \"subscriptions\": {\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\n  }\n}"
-        },
-        "url": "https://stag.api.artificilabs.com/v1/rbac/user/"
+      "Name": "Create User",
+      "HTTPMethod": "POST",
+      "Group": "Misc",
+      "RequestContentType": "application/json",
+      "RequiresAuthentication": true,
+      "Server": "Server 1",
+      "Route": "/user/",
+      "Responses": {},
+      "Response": {
+        "Optional": false,
+        "Type": "Void",
+        "IsSdlNativeType": true,
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Nullable": false,
+        "IsArray": false,
+        "IsMap": false,
+        "Deprecated": false,
+        "Name": "Response"
       },
-      "response": []
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "Parameters": [
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "application/json",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "ParamFormat": "Body",
+          "Optional": false,
+          "Type": "Create User Request",
+          "IsSdlNativeType": false,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "{\r\n  \"email\": \"testadmin2@quikmile.com\",\r\n  \"password\": \"admin\",\r\n  \"subscriptions\": {\r\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\r\n  }\r\n}",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "Body",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "Errors": [],
+      "TestCases": [
+        {
+          "Name": "Create User",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [
+            {
+              "IsNull": false,
+              "Name": "Content-Type",
+              "Value": "application/json"
+            },
+            {
+              "IsNull": false,
+              "Name": "Body",
+              "Value": "{\r\n  \"email\": \"testadmin2@quikmile.com\",\r\n  \"password\": \"admin\",\r\n  \"subscriptions\": {\r\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\r\n  }\r\n}"
+            }
+          ],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [],
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBodyMatchMode": "NONE",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
+        }
+      ],
+      "WrapBodyInObject": false,
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
-      "name": "Update User",
-      "_postman_id": "2257577-962627af-53b3-636f-261c-26fc130ec252",
-      "request": {
-        "method": "PUT",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"name\":\"Test Tenant 1\", \"subscriptions\": {\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\n  }\n}"
-        },
-        "url": "https://stag.api.artificilabs.com/v1/rbac/user/178c844a-541f-49cb-a408-2619a8ff74a2/"
+      "Name": "Update User",
+      "HTTPMethod": "PUT",
+      "Group": "Misc",
+      "RequestContentType": "application/json",
+      "RequiresAuthentication": true,
+      "Server": "Server 1",
+      "Route": "/user/178c844a-541f-49cb-a408-2619a8ff74a2/",
+      "Responses": {},
+      "Response": {
+        "Optional": false,
+        "Type": "Void",
+        "IsSdlNativeType": true,
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Nullable": false,
+        "IsArray": false,
+        "IsMap": false,
+        "Deprecated": false,
+        "Name": "Response"
       },
-      "response": []
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "Parameters": [
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "application/json",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "ParamFormat": "Body",
+          "Optional": false,
+          "Type": "Update User Request",
+          "IsSdlNativeType": false,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "{\r\n  \"name\": \"Test Tenant 1\",\r\n  \"subscriptions\": {\r\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\r\n  }\r\n}",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "Body",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "Errors": [],
+      "TestCases": [
+        {
+          "Name": "Update User",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [
+            {
+              "IsNull": false,
+              "Name": "Content-Type",
+              "Value": "application/json"
+            },
+            {
+              "IsNull": false,
+              "Name": "Body",
+              "Value": "{\r\n  \"name\": \"Test Tenant 1\",\r\n  \"subscriptions\": {\r\n    \"tenant_id\": \"146cc65f-9492-4578-a626-cd1a115c69d1\"\r\n  }\r\n}"
+            }
+          ],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [],
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBodyMatchMode": "NONE",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
+        }
+      ],
+      "WrapBodyInObject": false,
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
-      "name": "Delete User",
-      "_postman_id": "2257577-77169ad3-3306-47ef-06f7-887347a73487",
-      "request": {
-        "method": "DELETE",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": ""
-        },
-        "url": "http://stag.api.artificilabs.com/v1/rbac/user/ca5a3051-8cbf-416c-8ec5-fa0a3325583a/"
+      "Name": "Delete User",
+      "HTTPMethod": "DELETE",
+      "Group": "Misc",
+      "RequestContentType": "application/json",
+      "RequiresAuthentication": true,
+      "Server": "Server 2",
+      "Route": "/user/ca5a3051-8cbf-416c-8ec5-fa0a3325583a/",
+      "Responses": {},
+      "Response": {
+        "Optional": false,
+        "Type": "Void",
+        "IsSdlNativeType": true,
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Nullable": false,
+        "IsArray": false,
+        "IsMap": false,
+        "Deprecated": false,
+        "Name": "Response"
       },
-      "response": []
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "Parameters": [
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "application/json",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "Errors": [],
+      "TestCases": [
+        {
+          "Name": "Delete User",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [
+            {
+              "IsNull": false,
+              "Name": "Content-Type",
+              "Value": "application/json"
+            }
+          ],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [],
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBodyMatchMode": "NONE",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
+        }
+      ],
+      "WrapBodyInObject": false,
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
-      "name": "Refresh Token",
-      "_postman_id": "2257577-aa373936-cb8d-026d-6e2a-f3201ee1cb94",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          },
-          {
-            "key": "Authorization",
-            "value": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTM3YjM5YTMtZTUzYy00ZmI2LWJjYmYtYjgwZmMxMWQ3MTQ4IiwiZXhwIjoxNDkwMzgzMzI1fQ.TceRZeG23XpKlSZ1ltpwenxFCnafSwNHHgVo-iuclbI"
-          },
-          {
-            "key": "X-Refresh-Token",
-            "value": "g#;tt&v)RjUMH3LV~Vr0XVfdW6wx43"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"username\":\"abhishek@quikmile.com\",\"password\":\"123abhi\"}"
-        },
-        "url": "http://stag.api.artificilabs.com/v1/rbac/refresh-token/"
+      "Name": "Refresh Token",
+      "HTTPMethod": "GET",
+      "Group": "Misc",
+      "RequestContentType": "application/json",
+      "RequiresAuthentication": false,
+      "Server": "Server 2",
+      "Route": "/refresh-token/",
+      "Responses": {},
+      "Response": {
+        "Optional": false,
+        "Type": "Void",
+        "IsSdlNativeType": true,
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Nullable": false,
+        "IsArray": false,
+        "IsMap": false,
+        "Deprecated": false,
+        "Name": "Response"
       },
-      "response": []
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "Parameters": [
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "application/json",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTM3YjM5YTMtZTUzYy00ZmI2LWJjYmYtYjgwZmMxMWQ3MTQ4IiwiZXhwIjoxNDkwMzgzMzI1fQ.TceRZeG23XpKlSZ1ltpwenxFCnafSwNHHgVo-iuclbI",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "Authorization",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "g#;tt&v)RjUMH3LV~Vr0XVfdW6wx43",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "X-Refresh-Token",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "Errors": [],
+      "TestCases": [
+        {
+          "Name": "Refresh Token",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [
+            {
+              "IsNull": false,
+              "Name": "Content-Type",
+              "Value": "application/json"
+            },
+            {
+              "IsNull": false,
+              "Name": "Authorization",
+              "Value": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTM3YjM5YTMtZTUzYy00ZmI2LWJjYmYtYjgwZmMxMWQ3MTQ4IiwiZXhwIjoxNDkwMzgzMzI1fQ.TceRZeG23XpKlSZ1ltpwenxFCnafSwNHHgVo-iuclbI"
+            },
+            {
+              "IsNull": false,
+              "Name": "X-Refresh-Token",
+              "Value": "g#;tt&v)RjUMH3LV~Vr0XVfdW6wx43"
+            }
+          ],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [],
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBodyMatchMode": "NONE",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
+        }
+      ],
+      "WrapBodyInObject": false,
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
-      "name": "Login User",
-      "_postman_id": "2257577-8c2f76cb-a8c2-02e8-9d8d-18f39d13d9f0",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"username\":\"admin\",\"password\":\"admin\"}"
-        },
-        "url": "https://stag.api.artificilabs.com/v1/rbac/login/"
+      "Name": "Login User",
+      "HTTPMethod": "POST",
+      "Group": "Misc",
+      "RequestContentType": "application/json",
+      "RequiresAuthentication": true,
+      "Server": "Server 1",
+      "Route": "/login/",
+      "Responses": {},
+      "Response": {
+        "Optional": false,
+        "Type": "Void",
+        "IsSdlNativeType": true,
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Nullable": false,
+        "IsArray": false,
+        "IsMap": false,
+        "Deprecated": false,
+        "Name": "Response"
       },
-      "response": []
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "Parameters": [
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "application/json",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "Content-Type",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "ParamFormat": "Body",
+          "Optional": false,
+          "Type": "Login User Request",
+          "IsSdlNativeType": false,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "{\"username\":\"admin\",\"password\":\"admin\"}",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "Body",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "Errors": [],
+      "TestCases": [
+        {
+          "Name": "Login User",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [
+            {
+              "IsNull": false,
+              "Name": "Content-Type",
+              "Value": "application/json"
+            },
+            {
+              "IsNull": false,
+              "Name": "Body",
+              "Value": "{\"username\":\"admin\",\"password\":\"admin\"}"
+            }
+          ],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [],
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBodyMatchMode": "NONE",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
+        }
+      ],
+      "WrapBodyInObject": false,
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     },
     {
-      "name": "Auth Request",
-      "_postman_id": "2257577-66f0e6e3-bf3e-4c1d-709b-176e3be0a0f4",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTk0MmFlYTEtMGNkMS00YjFiLWIzNDctY2VmMDE1NDA3MDI2IiwiZXhwIjoxNDkyMDg2MjM1LCJzdWJzY3JpcHRpb25zIjp7InRlbmFudF9pZCI6IjE0NmNjNjVmLTk0OTItNDU3OC1hNjI2LWNkMWExMTVjNjlkMSJ9fQ.EmSSQCmjVHHMjz2qTOilGxvvgBw0a3CMsbdq1_Btktc"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\"username\":\"abhishek@quikmile.com\",\"password\":\"123abhi\"}"
-        },
-        "url": "https://stag.api.artificilabs.com/v1/rbac/auth/"
+      "Name": "Auth Request",
+      "HTTPMethod": "GET",
+      "Group": "Misc",
+      "RequiresAuthentication": false,
+      "Server": "Server 1",
+      "Route": "/auth/",
+      "Responses": {},
+      "Response": {
+        "Optional": false,
+        "Type": "Void",
+        "IsSdlNativeType": true,
+        "Constant": false,
+        "IsStream": false,
+        "IsAttribute": false,
+        "Nullable": false,
+        "IsArray": false,
+        "IsMap": false,
+        "Deprecated": false,
+        "Name": "Response"
       },
-      "response": []
+      "HasOptionalQueryParams": false,
+      "HasOptionalFieldParams": false,
+      "CollectParameters": false,
+      "Parameters": [
+        {
+          "ParamFormat": "Header",
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Example": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTk0MmFlYTEtMGNkMS00YjFiLWIzNDctY2VmMDE1NDA3MDI2IiwiZXhwIjoxNDkyMDg2MjM1LCJzdWJzY3JpcHRpb25zIjp7InRlbmFudF9pZCI6IjE0NmNjNjVmLTk0OTItNDU3OC1hNjI2LWNkMWExMTVjNjlkMSJ9fQ.EmSSQCmjVHHMjz2qTOilGxvvgBw0a3CMsbdq1_Btktc",
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "Authorization",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "Errors": [],
+      "TestCases": [
+        {
+          "Name": "Auth Request",
+          "Enabled": true,
+          "ShouldPass": true,
+          "InputParameters": [
+            {
+              "IsNull": false,
+              "Name": "Authorization",
+              "Value": "X-Token eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiZTk0MmFlYTEtMGNkMS00YjFiLWIzNDctY2VmMDE1NDA3MDI2IiwiZXhwIjoxNDkyMDg2MjM1LCJzdWJzY3JpcHRpb25zIjp7InRlbmFudF9pZCI6IjE0NmNjNjVmLTk0OTItNDU3OC1hNjI2LWNkMWExMTVjNjlkMSJ9fQ.EmSSQCmjVHHMjz2qTOilGxvvgBw0a3CMsbdq1_Btktc"
+            }
+          ],
+          "ExpectedStatus": "200",
+          "ExpectedHeaders": [],
+          "ExpectedHeadersAllowExtra": true,
+          "ExpectedBodyMatchMode": "NONE",
+          "ExpectedArrayOrderedMatching": false,
+          "ExpectedArrayCheckCount": false,
+          "ResponseMatchSchema": true
+        }
+      ],
+      "WrapBodyInObject": false,
+      "Deprecated": false,
+      "XmlRequest": false,
+      "XmlResponse": false
     }
-  ]
+  ],
+  "EndpointGroups": [
+    {
+      "Name": "Misc",
+      "Description": ""
+    }
+  ],
+  "CustomTypes": [
+    {
+      "Name": "Create User Request",
+      "ImplementationType": "Structure",
+      "Fields": [
+        {
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Attributes": {},
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "email",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Attributes": {},
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "password",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "Optional": false,
+          "Type": "Subscriptions",
+          "IsSdlNativeType": false,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "subscriptions",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "ExampleValue": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
+      "Deprecated": false
+    },
+    {
+      "Name": "Subscriptions",
+      "ImplementationType": "Structure",
+      "Fields": [
+        {
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Attributes": {},
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "tenant_id",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "ExampleValue": "{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}",
+      "Deprecated": false
+    },
+    {
+      "Name": "Update User Request",
+      "ImplementationType": "Structure",
+      "Fields": [
+        {
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Attributes": {},
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "name",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "Optional": false,
+          "Type": "Subscriptions",
+          "IsSdlNativeType": false,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "subscriptions",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "ExampleValue": "{\"name\":\"Test Tenant 1\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
+      "Deprecated": false
+    },
+    {
+      "Name": "Login User Request",
+      "ImplementationType": "Structure",
+      "Fields": [
+        {
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Attributes": {},
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "username",
+          "Description": "",
+          "DefaultValue": ""
+        },
+        {
+          "Optional": false,
+          "Type": "String",
+          "IsSdlNativeType": true,
+          "Constant": false,
+          "IsStream": false,
+          "IsAttribute": false,
+          "Attributes": {},
+          "Nullable": false,
+          "IsArray": false,
+          "IsMap": false,
+          "Deprecated": false,
+          "Name": "password",
+          "Description": "",
+          "DefaultValue": ""
+        }
+      ],
+      "ExampleValue": "{\"username\":\"admin\",\"password\":\"admin\"}",
+      "Deprecated": false
+    }
+  ],
+  "UserDefinedImportedTypes": [],
+  "CodeGenSettings": {
+    "SynchronyMode": "Asynchronous",
+    "ModelSerializationScheme": "Json",
+    "ArraySerialization": "Indexed",
+    "Nullify404": false,
+    "UseHttpMethodPrefix": true,
+    "UseModelPrefix": false,
+    "UseExceptionPrefix": true,
+    "UseEnumPrefix": true,
+    "UseControllerPrefix": true,
+    "UseConstructorsForConfig": false,
+    "Timeout": 0.0,
+    "AndroidUseAppManifest": false,
+    "iOSUseAppInfoPlist": false,
+    "iOSGenerateCoreData": false,
+    "CollapseParamsToArray": false,
+    "RunscopeEnabled": false,
+    "AndroidHttpClient": "ANDROID_OK",
+    "JavaHttpClient": "JAVA_OK",
+    "ObjCHttpClient": "UNIREST",
+    "CSharpHttpClient": "UNIREST",
+    "NodeHttpClient": "NODE_REQUEST",
+    "JavaUsePropertiesConfig": false,
+    "PHPHttpClient": "UNIREST",
+    "EnablePHPComposerVersionString": false,
+    "EnableGlobalUserAgent": true,
+    "EnableAdditionalModelProperties": false,
+    "PreserveParameterOrder": true,
+    "ValidateRequiredParameters": false,
+    "AppendContentHeaders": true,
+    "GenerateInterfaces": false,
+    "UseCommonSDKLibrary": false,
+    "ParameterArrayFormat": "ParamArrayWithIndex",
+    "SecurityProtocols": [
+      "Ssl3",
+      "Tls"
+    ],
+    "GenerateTravisConfig": false,
+    "GenerateCircleConfig": false,
+    "GenerateAppveyorConfig": false,
+    "GenerateJenkinsConfig": false,
+    "EnableLogging": false,
+    "EnableHttpCache": false,
+    "Retries": 0,
+    "RetryInterval": 1.0,
+    "BackoffFactor": 0.0,
+    "UserConfigurableRetries": true,
+    "GenerateAdvancedDocs": true,
+    "DisableDocs": false,
+    "StoreTimezoneInformation": false,
+    "UnderscoreNumbers": true,
+    "UseSingletonPattern": true,
+    "IgnoreIfNullJson": false,
+    "DisableLinting": false,
+    "SortResources": false,
+    "LiftParameterDescriptionFromCustomType": false,
+    "AllowSkippingSSLCertVerification": false,
+    "ApplyCustomizations": [],
+    "DoNotSplitWords": [],
+    "ReturnCompleteHttpResponse": false,
+    "ThrowForHttpErrorStatusCodes": true,
+    "GenerateModels": true,
+    "GenerateEnums": true,
+    "GenerateExceptions": true,
+    "ResponseMapping": {
+      "Type": "Simple"
+    },
+    "ForceKeywordArgsInRuby": false,
+    "SymbolizeHashKeysInRuby": false,
+    "UsageExampleEndpoint": {
+      "Description": "",
+      "EndpointGroupName": "",
+      "EndpointName": ""
+    },
+    "IsLatestVersion": false,
+    "CustomDependencies": [],
+    "EnableImmutableModels": false,
+    "UseEndpointMethodName": false,
+    "EncodeTemplateParameters": true,
+    "GenerateExamplesForOptionalFields": false
+  },
+  "Errors": [],
+  "TestGenSettings": {
+    "Configuration": {},
+    "TestTimeout": 30,
+    "PrecisionDelta": 0.01
+  },
+  "Roles": [],
+  "Namespaces": [],
+  "ExportSettings": {
+    "ExportExtensions": false,
+    "UseDateTimeOnlyInRaml": false,
+    "SetPostmanParamValuesAsVariables": false,
+    "WrapResponseFieldInWsdl": true,
+    "AllowEmptyTypeAttributesInXsd": false,
+    "WrapInputOutputTypesInElementInXsd": false,
+    "AddRefSiblingDataInAllOfSchema": false,
+    "EncodeUrlParamsInPostman": true
+  }
 }
