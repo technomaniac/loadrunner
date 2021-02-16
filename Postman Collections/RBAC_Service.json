@@ -722,7 +722,8 @@
         }
       ],
       "ExampleValue": "{\"email\":\"testadmin2@quikmile.com\",\"password\":\"admin\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
-      "Deprecated": false
+      "Deprecated": false,
+      "IsXmlType": false
     },
     {
       "Name": "Subscriptions",
@@ -747,7 +748,8 @@
         }
       ],
       "ExampleValue": "{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}",
-      "Deprecated": false
+      "Deprecated": false,
+      "IsXmlType": false
     },
     {
       "Name": "Update User Request",
@@ -788,7 +790,8 @@
         }
       ],
       "ExampleValue": "{\"name\":\"Test Tenant 1\",\"subscriptions\":{\"tenant_id\":\"146cc65f-9492-4578-a626-cd1a115c69d1\"}}",
-      "Deprecated": false
+      "Deprecated": false,
+      "IsXmlType": false
     },
     {
       "Name": "Login User Request",
@@ -830,7 +833,8 @@
         }
       ],
       "ExampleValue": "{\"username\":\"admin\",\"password\":\"admin\"}",
-      "Deprecated": false
+      "Deprecated": false,
+      "IsXmlType": false
     }
   ],
   "UserDefinedImportedTypes": [],
@@ -931,7 +935,8 @@
     "EncodeTemplateParameters": true,
     "GenerateExamplesForOptionalFields": false,
     "MultitargetDotnetVersions": false,
-    "BackoffMax": 0.0
+    "BackoffMax": 0.0,
+    "RetryOnTimeout": true
   },
   "Errors": [],
   "TestGenSettings": {
