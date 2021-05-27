@@ -955,6 +955,7 @@
     "WrapInputOutputTypesInElementInXsd": false,
     "AddRefSiblingDataInAllOfSchema": false,
     "EncodeUrlParamsInPostman": true,
-    "UseXsdBase64BinaryType": false
+    "UseXsdBase64BinaryType": false,
+    "ExportXmlMetaData": true
   }
 }
