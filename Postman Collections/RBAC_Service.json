@@ -1048,7 +1048,9 @@
     "GenerateExamplesForOptionalFields": false,
     "MultitargetDotnetVersions": false,
     "BackoffMax": 0.0,
-    "RetryOnTimeout": true
+    "RetryOnTimeout": true,
+    "EnableCookies": false,
+    "EnableJsonPassThroughForAny": false
   },
   "Errors": [],
   "TestGenSettings": {
