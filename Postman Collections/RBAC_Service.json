@@ -1077,6 +1077,7 @@
     "AddRefSiblingDataInAllOfSchema": false,
     "EncodeUrlParamsInPostman": true,
     "UseXsdBase64BinaryType": false,
-    "ExportXmlMetaData": true
+    "ExportXmlMetaData": true,
+    "ExportDiscriminatorMappingValues": true
   }
 }
