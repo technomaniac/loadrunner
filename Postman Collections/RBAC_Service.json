@@ -1,4 +1,5 @@
 {
+  "AuthenticateEndpointsWith": [],
   "Name": "RBAC Service",
   "BaseUri": "https://stag.api.artificilabs.com/v1/rbac",
   "ServerConfiguration": {
@@ -32,8 +33,10 @@
     "Scopes": [],
     "ParamFormats": {}
   },
+  "AuthenticationSchemes": {},
   "Endpoints": [
     {
+      "AuthenticateEndpointWith": [],
       "Name": "Get All users",
       "HTTPMethod": "GET",
       "Group": "Misc",
@@ -116,6 +119,7 @@
       "XmlResponse": false
     },
     {
+      "AuthenticateEndpointWith": [],
       "Name": "Create User",
       "HTTPMethod": "POST",
       "Group": "Misc",
@@ -225,6 +229,7 @@
       "XmlResponse": false
     },
     {
+      "AuthenticateEndpointWith": [],
       "Name": "Update User",
       "HTTPMethod": "PUT",
       "Group": "Misc",
@@ -334,6 +339,7 @@
       "XmlResponse": false
     },
     {
+      "AuthenticateEndpointWith": [],
       "Name": "Delete User",
       "HTTPMethod": "DELETE",
       "Group": "Misc",
@@ -416,6 +422,7 @@
       "XmlResponse": false
     },
     {
+      "AuthenticateEndpointWith": [],
       "Name": "Refresh Token",
       "HTTPMethod": "GET",
       "Group": "Misc",
@@ -552,6 +559,7 @@
       "XmlResponse": false
     },
     {
+      "AuthenticateEndpointWith": [],
       "Name": "Login User",
       "HTTPMethod": "POST",
       "Group": "Misc",
@@ -661,6 +669,7 @@
       "XmlResponse": false
     },
     {
+      "AuthenticateEndpointWith": [],
       "Name": "Auth Request",
       "HTTPMethod": "GET",
       "Group": "Misc",
