@@ -966,6 +966,7 @@
     }
   ],
   "UserDefinedImportedTypes": [],
+  "GlobalTypeDefinitions": {},
   "CodeGenSettings": {
     "SynchronyMode": "Asynchronous",
     "ModelSerializationScheme": "Json",
