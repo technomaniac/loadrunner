@@ -1176,7 +1176,7 @@
     "UseXsdBase64BinaryType": false,
     "ExportXmlMetaData": true,
     "ExportDiscriminatorMappingValues": true,
-    "ExportGlobalTypeCombinators": false,
+    "ExportGlobalTypeCombinators": true,
     "ExportAnyType": true
   }
 }
